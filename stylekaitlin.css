@@ -1,0 +1,31 @@
+h1, main {
+    text-align: center;
+}
+
+h1, h2 {
+    color: #1f0c7b;
+    font-family:'Times New Roman', Times, serif;
+}
+
+img {
+    width: 350px;
+    height: 400px;
+}
+
+p {
+    font-size: 16px;
+}
+
+nav ul {
+    list-style-type: none; /* removes default bullet points */
+}
+
+nav a {
+    text-decoration: none; /* removes default underline */
+    color: black;
+    font-size: 20px;
+}
+
+nav a:hover {
+    font-weight: 700;
+}
