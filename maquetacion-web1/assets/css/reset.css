@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    min-height: 100vh;
+
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+p,
+a {
+    display: inline;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+img,
+video,
+iframe,
+picture,
+figure {
+    max-width: 100%;
+    display: block;
+
+}
+
+form,
+input,
+select,
+textarea,
+button,
+label {
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+
+}
