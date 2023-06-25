@@ -1,10 +1,141 @@
-body {
-    text-align: center;
-    font-family: 'Lobster', cursive;
-    background-color: black;
-    color: white;
-}
-p {
-    color: white;
-    font-size: 30px;
-}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/maquetacion-web1/assets/css/reset.css">
+    <link rel="stylesheet" href="/maquetacion-web1/assets/css/style.css">
+    <link rel="stylesheet" href="/maquetacion-web1/assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <title>Portafolio - Garces Gustavo</title>
+</head>
+
+<body>
+    <!-- Layout principal -->
+    <div class="layout">
+
+
+        <!-- Barra lateral (info usuario) -->
+        <aside class="layout__aside">
+            <section class="layout__user-info">
+                <!-- Info general de usuario -->
+
+                <div class="user-info__general">
+                    <div class="user-info__container-image">
+                        <img src="/maquetacion-web1/assets/img/default-user.jpg" class="user-info__image"
+                            alt="imagen-usuario">
+                    </div>
+                    <h2 class="user-info__name">Garces Gustavo</h2>
+                    <h4 class="user-info__job">Desarrollador Web</h4>
+                </div>
+                <!-- Menu de navegacion -->
+
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-house"></i>
+                                <span class="menu__overlay">Home</span>
+
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="sobre-mi.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">Sobre mi</span>
+
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="estudios.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                                <span class="menu__overlay">Estudios</span>
+
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="portafolio.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-briefcase"></i>
+                                <span class="menu__overlay">Portafolio</span>
+
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="blog.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-book"></i>
+                                <span class="menu__overlay">Blog</span>
+
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="contacto.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-envelope"></i>
+                                <span class="menu__overlay">Contacto</span>
+
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- link de redes sociales -->
+
+                <div class="user-info__links">
+                    <ul class="links__social">
+                        <li class="social__options">
+                            <a href="#" class="social__link"></a>
+                            <i class="social__icon fa-brands fa-youtube"></i>
+                        </li>
+
+                        <li class="social__options">
+                            <a href="#" class="social__link"></a>
+                            <i class="social__icon fa-brands fa-linkedin"></i>
+                        </li>
+
+                        <li class="social__options">
+                            <a href="#" class="social__link"></a>
+                            <i class="social__icon fa-brands fa-instagram"></i>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Boton descarga curriculum -->
+
+                <div class="user-info__buttons">
+                    <a href="#" class="user-info__btn">Descargar CV</a>
+                </div>
+
+                <!-- footer -->
+                <footer class="user-info__footer">
+                    &copy;2023 Garces Gustavo
+                </footer>
+
+            </section>
+        </aside>
+        <!-- Contenido principal -->
+
+        <main class="layout__content">
+
+            <section class="content__page">
+
+                <h1 class="page__name">Garces Gustavo</h1>
+                <h2 class="page__job">Desarrollador Web</h2>
+            </section>
+        </main>
+
+
+    </div>
+
+</body>
+
+</html>
