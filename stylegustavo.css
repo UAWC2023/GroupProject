@@ -1,10 +1,292 @@
-body {
-    text-align: center;
-    font-family: 'Lobster', cursive;
-    background-color: black;
-    color: white;
+/* DEFINICION VARIABLES */
+:root {
+    --color-principal: #ffffff;
+    --color-secundary: #04b4e0;
+
+    --color-background: #7be7d0;
+    --color-transparent: transparent;
+
+    --color-icon: #b5b6b7;
+    --color-title: #222222;
+    --color-subtitle: #888;
+    --color-text: #555555;
+
 }
-p {
-    color: white;
-    font-size: 30px;
+
+/* ESTILOS GENERALES */
+
+html {
+    font-size: 10px;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    font-family: "poppins", 'elvetica', 'sans-serif';
+    background-color: var(--color-background);
+    color: var(--color-text);
+    overflow: hidden;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-title);
+
+}
+
+/* IMAGEN DE FONDO */
+
+body {
+
+    background-image: url(/maquetacion-web1/assets/img/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -20px -120px;
+}
+
+/* ESTRUCTURA PRINCIPAL */
+
+.layout {
+    position: relative;
+    min-width: 1200px;
+    width: 70%;
+    height: 80vh;
+    min-height: 80vh;
+    margin: 7vh 7vh;
+
+    display: grid;
+    grid-template-areas:
+        "aside content";
+    grid-template-columns: 30% 70%;
+
+    /* SOMBRA DETRAS DEL LAYOUT */
+
+    border-radius: 4rem;
+    box-shadow: 0 0 100px -5px rgba(0, 0, 0, 0.25);
+}
+
+/* BARRA ASIDE AZUL */
+
+.layout__aside {
+    grid-area: aside;
+    border-radius: 4rem 0 0 4rem;
+    overflow: auto;
+    overflow-x: hidden;
+
+}
+
+.layout__user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100%;
+    min-width: 30rem;
+    background-color: var(--color-secundary);
+    color: var(--color-principal);
+
+}
+
+.user-info__container-image {
+    position: relative;
+    display: inline-block;
+    width: 18rem;
+    margin-top: 3rem;
+
+}
+
+.user-info__image {
+    width: 100%;
+    background-color: var(--color-principal);
+    border: 3px solid var(--color-principal);
+    border-radius: 50%;
+
+}
+
+.user-info__name {
+    margin-top: 2rem;
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-principal);
+
+
+}
+
+.user-info__job {
+    font-size: 1.7rem;
+    font-weight: 200;
+    color: var(--color-principal);
+
+}
+
+.user-info__links {
+    margin-bottom: 2.5rem;
+
+}
+
+.links__social {
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+
+
+}
+
+.social__options {
+    border-radius: 3rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    line-height: 4rem;
+    opacity: 0.9;
+    transition: all 200ms linear;
+}
+
+.social__options:hover {
+    opacity: 1rem;
+    background-color: rgba(255, 255, 255, 0.20);
+    font-size: 2.5rem;
+
+}
+
+
+.user-info__buttons {
+    margin-bottom: 2rem;
+}
+
+.user-info__btn {
+    border: 0.2rem solid var(--color-principal);
+    padding: 3rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    border-radius: 3rem;
+    color: var(--color-principal);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
+
+.user-info__btn:hover {
+    background-color: var(--color-principal);
+    color: var(--color-secundary);
+    transition: 350ms;
+    font-weight: bolder;
+}
+
+.user-info__footer {
+    position: absolute;
+    bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+/* CONTENEDOR PRIONCIPAL */
+
+.layout__content {
+    grid-area: content;
+    height: 100%;
+    min-height: 100%;
+    background-color: var(--color-secundary);
+    border-radius: 0 10rem 10rem 0;
+}
+
+.content__page {
+    min-height: 100%;
+    background-color: var(--color-principal);
+    border-radius: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.page__name {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+
+}
+
+.page__job {
+    font-size: 2.1rem;
+    font-weight: lighter;
+    color: var(--color-subtitle);
+
+}
+
+
+/* ESTILOS PRINCIPAL*/
+
+
+/* MENU NAVEGACION LATERAL */
+
+.layout__menu {
+
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -115px;
+    min-width: 10rem;
+    background-color: var(--color-transparent);
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 60%;
+    min-height: 32rem;
+    padding: 2rem 0;
+    margin: 0 10px;
+    background-color: var(--color-principal);
+    box-shadow: 0 0 3rem -0.5rem rgba(0, 0, 0, 0.5);
+    border-radius: 6rem;
+}
+
+.menu__option {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.menu__option:hover .menu__icon {
+    color: var(--color-secundary);
+    font-size: 3rem;
+    transition: all 300ms ease-in-out;
+
+}
+
+.menu__icon {
+    color: var(--color-icon);
+    font-size: 2.6rem;
+
+}
+
+/* TRANSICIONES DEL MENU */
+
+.menu__overlay {
+    position: absolute;
+    right: 0;
+    margin-top: -3rem;
+    opacity: 0;
+    display: block;
+    color: var(--color-principal);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-secundary);
+    white-space: nowrap;
+    transition: all 400ms ease-in-out;
+}
+
+.menu__option:hover .menu__overlay {
+    opacity: 1;
+    right: 100%;
 }
